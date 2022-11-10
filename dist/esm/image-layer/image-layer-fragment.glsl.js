@@ -1,0 +1,1 @@
+export default "uniform sampler2D texture;\nvarying vec2 vUV;\n\nvoid main(void) {\n  gl_FragColor = texture2D(texture, vUV.xy);\n}\n";

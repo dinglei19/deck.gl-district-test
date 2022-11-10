@@ -1,0 +1,69 @@
+.simulation-dashboard .right-panel {
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    bottom: 10px;
+    width: 650px;
+    margin-left: 110px;
+
+    .panel-statistics {
+        .statistics-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .statistics-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 20px 0;
+            font-family: Acens;
+            .card-text {
+                font-size: 20px;
+                font-weight: bold;
+                margin-right: 15px;
+                >div:last-child {
+                    color: #858585;
+                    font-size: 12px;
+                }
+            }
+            .card-number {
+                display: flex;
+            }
+            .number-split {
+                padding: 0 10px;
+                font-size: 34px;
+            }
+        }
+        .statistics-item {
+            margin: 0 10px;
+            .item-title {
+                padding: 3px 0;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 1);
+            } 
+            .item-content {
+                display: flex;
+                align-items: flex-end;
+                font-family: Acens;
+                >span:last-child {
+                    margin-left: 5px;
+                    font-size: 14px;
+                    color: #858585;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 10px;
+        left: -100px;
+        width: 110px;
+        background: url(http://10.78.6.180:9000/split.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}

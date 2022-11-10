@@ -1,0 +1,31 @@
+.bottom-panel {
+    position: absolute;
+    bottom: 50px;
+    z-index: 100;
+    font-family: 'AlibabaPuHuiTi';
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
+    .bottom-list {
+        padding: 10px;
+        display: flex;
+
+        .bottom-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+            font-weight: bold;
+            .item-num {
+                display: flex;
+                align-items: flex-end;
+                > span:last-child {
+                    font-size: 14px;
+                }
+            }
+            .item-label {
+                color: #858585;
+            }
+        }
+    }
+}

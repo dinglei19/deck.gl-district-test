@@ -1,0 +1,93 @@
+.dashboard-container .right-panel {
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    width: 400px;
+    bottom: 0;
+    padding: 10px;
+    background: linear-gradient(to left, rgba(0, 58, 140, 0.4), rgba(0, 58, 140, 0.1));
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    .panel-header {
+        .header-text {
+            margin-bottom: 3px;
+            .text-zh {
+                display: flex;
+                align-items: flex-end;
+                color: #79daff;
+                font-weight: bold;
+                font-size: 20px;
+                span:last-child{
+                    padding-left: 5px;
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+            .text-en {
+                font-size: 14px;
+                color: #858585;
+            }
+        }
+        .header-icon {
+            position: relative;
+            height: 3px;
+            background: #575757;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 3px;
+                left: 0;
+                width: 120px;
+                background: rgba(70, 249, 249, 0.61);
+            }
+        }
+    }
+
+    .item-list {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .card-item {
+            position: relative;
+            width: 120px;
+            height: 60px;
+            border: 1px solid #383838;
+            background-color: #181818;
+            text-align: right;
+            padding: 10px 5px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -7px;
+                left: -1px;
+                right: -1px;
+                height: 2px;
+                border: 1px solid #383838;
+            }
+
+            .item-data {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                color: #def6ff;
+                font-weight: bold;
+
+                >span:last-child {
+                    padding-left: 4px;
+                    font-size: 12px;
+                }
+            }
+            .item-text {
+                line-height: 1.1;
+                .text-zh {
+                    color: #def6ff;
+                }
+                .text-en {
+                    font-size: 12px;
+                    color: #858585;
+                }
+            }
+        }
+    }
+}

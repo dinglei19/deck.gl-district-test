@@ -1,0 +1,56 @@
+.simulation-dashboard .header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    z-index: 100;
+    font-family: 'AlibabaPuHuiTi';
+
+    .header-text {
+        flex-shrink: 0;
+        line-height: 1.1;
+
+        .text-zh {
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        .text-en {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .header-bg {
+        margin: 5px 0 0 30px;
+        width: 100%;
+
+        .split-icon {
+            height: 10px;
+            background: url('http://10.78.6.180:9000/split-icon2.svg') center;
+        }
+
+        .animate-icon {
+            width: 180px;
+            height: 18px;
+            background: url('http://10.78.6.180:9000/animate-icon.png') no-repeat;
+            transform: rotate(0deg);
+            opacity: 0.2;
+            pointer-events: none;
+            filter: hue-rotate(0deg) contrast(100%) opacity(100%) saturate(100%) brightness(110%);
+            background-size: cover;
+        }
+    }
+
+    .clock-wrap {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        display: flex;
+        .clock-date, .clock-time {
+            font-size: 18px !important;
+            margin-left: 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}

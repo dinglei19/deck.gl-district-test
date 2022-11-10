@@ -1,0 +1,1 @@
+export default "attribute vec4 positions;\nattribute vec2 uv;\n\nvarying float opacity;\nvarying vec2 vUV;\n\nvoid main(void) {\n    vec4 common_position = project_position(positions);\n    vUV = uv;\n    gl_Position =  project_common_position_to_clipspace(common_position);\n}";
